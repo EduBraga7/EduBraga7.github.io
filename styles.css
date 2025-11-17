@@ -1,195 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-
-
-/* Animação para o cartão aparecer suavemente */
-
+/* Animação */
 @keyframes fadeIn {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(20px); /* Começa um pouco para baixo */
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
-
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-
-
 
 body {
-
-    /* Gradiente sutil para um fundo mais dinâmico */
-
     background: linear-gradient(to top, #1e1e1e, #2c2c2c);
-
     color: #f0f0f0;
-
     font-family: 'Poppins', sans-serif;
-
     text-align: center;
-
     margin: 0;
-
-    /* Centraliza o container verticalmente */
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     min-height: 100vh;
-
+    
+    /* --- CORREÇÃO AQUI --- */
+    /* 1. Adiciona padding nas laterais do body */
+    padding: 0 10px; 
+    
+    /* 2. Garante que o padding não crie barras de rolagem */
+    box-sizing: border-box; 
 }
-
-
 
 .container {
-
     max-width: 600px;
-
-    width: 90%;
-
+    
+    /* --- CORREÇÃO AQUI --- */
+    /* 3. Define a largura como 100% */
+    /* O container agora ocupa 100% do body (que tem 10px de padding), */
+    /* e no desktop, ele será limitado pelo 'max-width: 600px'. */
+    width: 100%; 
+    
     padding: 20px;
-
     background-color: #333;
-
     border-radius: 15px;
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-
-
-    /* Aplica a animação ao container */
-
     animation: fadeIn 0.8s ease-out;
-
 }
 
-
-
+/* FOTO e Títulos */
 h1 {
-
     font-weight: 600;
-
     margin-bottom: 5px;
-
 }
-
-
-
 p {
-
     font-weight: 300;
-
     margin-top: 5px;
-
-    opacity: 0.9; /* Deixa o texto um pouco mais sutil */
-
+    opacity: 0.9;
 }
-
-
-
-/* FOTO */
-
 .foto-perfil {
-
     width: 150px;
-
     height: 150px;
-
     border-radius: 50%;
-
-    border: 4px solid #1e90ff; /* Borda com a cor de destaque */
-
+    border: 4px solid #1e90ff;
     margin-top: 20px;
-
     margin-bottom: 20px;
-
     object-fit: cover;
-
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 }
-
-
-
 h2 {
-
     font-weight: 400;
-
-    border-top: 1px solid #444; /* Linha para separar as seções */
-
+    border-top: 1px solid #444;
     padding-top: 20px;
-
     margin-top: 30px;
-
 }
 
-
-
+/* Links */
 ul {
-
     list-style-type: none;
-
     padding: 0;
-
     margin: 0;
-
 }
-
-
-
-/* Estilo dos links como botões */
-
 ul li a {
-
     display: block;
-
     background-color: transparent;
-
     border: 2px solid #1e90ff;
-
     color: #ffffff;
-
     padding: 15px;
-
     margin-bottom: 10px;
-
     border-radius: 8px;
-
     text-decoration: none;
-
     transition: background-color 0.3s, transform 0.2s;
-
 }
-
-
-
-/* Efeito ao passar o mouse sobre os botões */
-
 ul li a:hover {
-
     background-color: #1e90ff;
-
-    transform: scale(1.03); /* Efeito de "saltar" */
-
+    transform: scale(1.03);
+}
+ul li a i {
+    margin-right: 8px;
 }
 
+/* Media Query (Agora simplificada) */
+@media (max-width: 480px) {
+    .container {
+        /* O 'width: 100%' não é mais necessário aqui, pois já é o padrão */
+        padding: 15px;
+    }
 
-
-ul li a i {
-
-    margin-right: 8px;
-
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
 }
