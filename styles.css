@@ -29,19 +29,20 @@ body {
     align-items: center;     /* Centraliza Verticalmente no eixo cruzado */
     
     min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela visível */
-    
+    overflow-x: hidden;
     /* Padding em todos os lados para telas pequenas não colarem na borda */
     padding: 20px; 
 }
 
 .container {
     max-width: 600px;
-    width: 100%; /* Usa 100% do espaço disponível até o max-width */
+    max-width: 400px; /* Usa 100% do espaço disponível até o max-width */
     
     /* Removemos margins laterais automáticas pois o Flexbox do body já cuida disso */
     background-color: #333;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
     
     /* Padding interno do card */
     padding: 30px 20px; 
