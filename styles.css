@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Box sizing global para evitar problemas com padding/margins */
+/* Reset básico */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
+/* Removemos o html/body height 100% fixo para evitar bugs de scroll */
 
 /* Animação */
 @keyframes fadeIn {
@@ -17,27 +15,37 @@ html, body {
 
 body {
     background: linear-gradient(to top, #1e90ff, #2c2c2c);
+    /* Garante que o gradiente cubra tudo mesmo se der scroll */
+    background-attachment: fixed; 
     color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
+    
+    /* A MÁGICA DA CENTRALIZAÇÃO */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* Lateral mínima para telas pequenas. Mantemos 20px para respiracao. */
-    padding: 0 20px;
+    flex-direction: column; /* Garante fluxo vertical */
+    justify-content: center; /* Centraliza Horizontalmente no eixo principal */
+    align-items: center;     /* Centraliza Verticalmente no eixo cruzado */
+    
+    min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela visível */
+    
+    /* Padding em todos os lados para telas pequenas não colarem na borda */
+    padding: 20px; 
 }
 
 .container {
     max-width: 600px;
-    /* Usa toda a largura disponível até o max-width e centraliza o bloco */
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
+    width: 100%; /* Usa 100% do espaço disponível até o max-width */
+    
+    /* Removemos margins laterais automáticas pois o Flexbox do body já cuida disso */
     background-color: #333;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    
+    /* Padding interno do card */
+    padding: 30px 20px; 
+    
     animation: fadeIn 0.8s ease-out;
 }
 
@@ -51,16 +59,18 @@ p {
     margin-top: 5px;
     opacity: 0.9;
 }
+
 .foto-perfil {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid #1e90ff;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     object-fit: cover;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 h2 {
     font-weight: 400;
     border-top: 1px solid #444;
@@ -74,6 +84,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 ul li a {
     display: block;
     background-color: transparent;
@@ -85,24 +96,25 @@ ul li a {
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;
 }
+
 ul li a:hover {
     background-color: #1e90ff;
     transform: scale(1.03);
 }
+
 ul li a i {
     margin-right: 8px;
 }
 
-/* Media Query (Agora simplificada) */
-/* Layout para Celular */
+/* Responsividade */
 @media (max-width: 480px) {
-    .container {
-        /* O 'width: 100%' não é mais necessário aqui, pois já é o padrão */
-        padding: 15px;
-    }
-
     .foto-perfil {
         width: 120px;
         height: 120px;
+    }
+    
+    /* Ajuste fino para telas muito pequenas */
+    .container {
+        padding: 20px 15px;
     }
 }
