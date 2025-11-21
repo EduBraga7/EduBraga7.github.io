@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* Box sizing global para evitar problemas com padding/margins */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 /* Animação */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -7,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #1e1e1e, #2c2c2c);
+    background: linear-gradient(to top, #1e90ff, #2c2c2c);
     color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -16,25 +25,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
-    /* --- CORREÇÃO AQUI --- */
-    /* 1. Adiciona padding nas laterais do body */
-    padding: 0 10px; 
-    
-    /* 2. Garante que o padding não crie barras de rolagem */
-    box-sizing: border-box; 
+    /* Lateral mínima para telas pequenas. Mantemos 20px para respiracao. */
+    padding: 0 20px;
 }
 
 .container {
     max-width: 600px;
-    
-    /* --- CORREÇÃO AQUI --- */
-    /* 3. Define a largura como 100% */
-    /* O container agora ocupa 100% do body (que tem 10px de padding), */
-    /* e no desktop, ele será limitado pelo 'max-width: 600px'. */
-    width: 100%; 
-    
+    /* Usa toda a largura disponível até o max-width e centraliza o bloco */
+    width: 100%;
     padding: 20px;
+    margin: 0 auto;
     background-color: #333;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -94,6 +94,7 @@ ul li a i {
 }
 
 /* Media Query (Agora simplificada) */
+/* Layout para Celular */
 @media (max-width: 480px) {
     .container {
         /* O 'width: 100%' não é mais necessário aqui, pois já é o padrão */
