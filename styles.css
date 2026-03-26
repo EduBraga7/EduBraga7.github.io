@@ -107,6 +107,7 @@ body {
     display: grid;
     grid-template-columns: 140px 1fr;
     align-items: center;
+    align-content: center;
     gap: 2rem;
     background: linear-gradient(135deg, #ffffff 0%, #f3f8ff 100%);
     border: 1px solid var(--line);
@@ -123,10 +124,11 @@ body {
     object-fit: cover;
     border: 3px solid #fff;
     box-shadow: 0 10px 20px rgba(11, 59, 102, 0.2);
+    align-self: center;
+    justify-self: center;
 }
 
 .hero-content {
-    min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
