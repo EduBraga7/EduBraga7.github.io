@@ -54,9 +54,9 @@
             <p class="eyebrow">Open to opportunities in finance and technology</p>
             <p>Professional with over 5 years in operations and administrative routines, currently studying Systems Analysis and Development (2nd semester, expected graduation in 2027), focused on Python, SQL, and advanced Excel to turn data into business decisions.</p>
             <div class="hero-actions">
-                <a class="btn primary" href="resume-eduardo-braga-en.pdf" download>
+                <a id="download-pdf-en" class="btn primary" href="resume-eduardo-braga-en.pdf" download>
                     <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
-                    Download resume PDF
+                    Download resume
                 </a>
                 <div class="hero-socials" aria-label="Quick contacts">
                     <a class="hero-icon-btn" href="https://www.linkedin.com/in/ebragaprado" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -183,5 +183,28 @@
     <a class="back-to-top" href="#top" aria-label="Back to top">
         <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </a>
+    <script>
+        // Rastreamento de downloads de currículo no Google Analytics
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadLinks = {
+                'download-pdf-en': {evento: 'download_curriculo', formato: 'pdf', idioma: 'en'}
+            };
+
+            Object.entries(downloadLinks).forEach(([elementId, params]) => {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.addEventListener('click', function() {
+                        // Dispara evento no GA4 de forma não-bloqueante
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', params.evento, {
+                                formato: params.formato,
+                                idioma: params.idioma
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

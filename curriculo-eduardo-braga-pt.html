@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV8RSCNHV4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XV8RSCNHV4');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Braga - Currículo (PT-BR)</title>
@@ -183,6 +194,10 @@
                 display: none !important;
             }
 
+            .lang-switch, [class*="lang"], [id*="lang"], .language-selector {
+                display: none !important;
+            }
+
             a {
                 color: #000 !important;
                 text-decoration: none !important;
@@ -362,7 +377,7 @@
     </style>
 </head>
 <body>
-    <a class="download-btn" href="curriculo-eduardo-braga-pt.pdf" download>
+    <a id="download-pdf-pt" class="download-btn" href="curriculo-eduardo-braga-pt.pdf" download>
         <button style="padding: 8px 16px; background: #0b3b66; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; font-size: 0.9rem;">↓ Baixar PDF</button>
     </a>
     <article class="resume">
@@ -382,7 +397,7 @@
             <section>
                 <h2>Objetivo Profissional</h2>
                 <p>Profissional com mais de 5 anos de experiência em rotinas administrativas e controle de operações, com forte disciplina de execução e visão de processos. Atualmente, curso Análise e Desenvolvimento de Sistemas (2º semestre, conclusão prevista para 2027), com foco em Python, SQL e Excel avançado para estruturar dados, gerar insights e apoiar decisões estratégicas.</p>
-                <p>Busco estágio nas áreas financeira ou de análise de dados, conectando experiência operacional e base técnica para contribuir com análises, indicadores e melhoria contínua. Certificação CPA (ANBIMA) em preparação.</p>
+                <p>Busco estágio nas áreas financeira ou de análise de dados, conectando experiência operacional e base técnica para contribuir com análises, indicadores e melhoria contínua. Certificação CPA-20 (ANBIMA) — Exame agendado para 17/04/2026.</p>
             </section>
 
             <div class="grid-2">
@@ -397,7 +412,7 @@
                 <section>
                     <h2>Certificações e Idiomas</h2>
                     <ul>
-                        <li>CPA (ANBIMA) - Em preparação</li>
+                        <li>CPA-20 (ANBIMA) — Exame agendado para 17/04/2026</li>
                         <li>Inglês - Leitura e escrita avançadas</li>
                     </ul>
                 </section>
@@ -465,5 +480,27 @@
             </section>
         </main>
     </article>
+    <script>
+        // Rastreamento de downloads de currículo no Google Analytics
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadLinks = {
+                'download-pdf-pt': {evento: 'download_curriculo', formato: 'pdf', idioma: 'pt'}
+            };
+
+            Object.entries(downloadLinks).forEach(([elementId, params]) => {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.addEventListener('click', function() {
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', params.evento, {
+                                formato: params.formato,
+                                idioma: params.idioma
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
