@@ -127,20 +127,216 @@
             }
         }
 
+        @page {
+            margin: 0.4cm;
+            padding: 0;
+            size: A4;
+        }
+
         @media print {
-            body {
-                background: #fff;
-                padding: 0;
+            /* Remover margens/paddings globais */
+            * {
+                margin: 0 !important;
+                padding: 0 !important;
+                widows: 2;
+                orphans: 2;
             }
 
+            html, body {
+                width: 100%;
+                height: 100%;
+                background: #fff !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border: none !important;
+                font-size: 10.5pt;
+            }
+
+            body {
+                display: block;
+                background: #fff !important;
+                padding: 0 !important;
+            }
+
+            /* Esconder elementos desnecessários */
+            .download-btn {
+                display: none !important;
+            }
+
+            a {
+                color: #000 !important;
+                text-decoration: none !important;
+                pointer-events: none;
+            }
+
+            header, footer, nav {
+                display: none !important;
+            }
+
+            /* Container principal */
             .resume {
-                border: none;
-                border-radius: 0;
-                box-shadow: none;
+                border: none !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+                page-break-after: avoid;
+            }
+
+            /* Header do currículo */
+            .top {
+                background: linear-gradient(135deg, #0b3b66, #115a96) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color: #fff !important;
+                padding: 10px 12px !important;
+                margin: 0 !important;
+                page-break-inside: avoid;
+            }
+
+            h1 {
+                margin: 0 !important;
+                padding: 0 !important;
+                font-size: 1.4em !important;
+                line-height: 1.2 !important;
+            }
+
+            .subtitle {
+                margin: 2px 0 0 !important;
+                padding: 0 !important;
+                opacity: 0.95;
+                font-weight: 500;
+                font-size: 0.85em !important;
+            }
+
+            .contacts {
+                margin-top: 6px !important;
+                padding: 0 !important;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px 10px !important;
+                font-size: 0.8em !important;
+                line-height: 1.2;
+            }
+
+            .contacts a {
+                display: none !important;
+            }
+
+            /* Conteúdo principal */
+            .content {
+                padding: 8px 12px !important;
+                display: grid;
+                gap: 6px !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             section {
-                break-inside: avoid;
+                border: 1px solid var(--line) !important;
+                border-radius: 6px !important;
+                padding: 8px 10px !important;
+                margin: 0 !important;
+                page-break-inside: avoid;
+                background: #fff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            h2 {
+                margin: 0 0 6px !important;
+                padding: 0 !important;
+                color: var(--accent) !important;
+                font-size: 0.85em !important;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1.1;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            p {
+                margin: 0 0 4px !important;
+                padding: 0 !important;
+                color: var(--soft) !important;
+                font-size: 0.9em !important;
+                line-height: 1.3 !important;
+            }
+
+            p:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            ul {
+                margin: 0 !important;
+                padding-left: 14px !important;
+                color: var(--soft) !important;
+                font-size: 0.9em !important;
+                line-height: 1.3;
+            }
+
+            li {
+                margin-bottom: 2px !important;
+                padding: 0 !important;
+            }
+
+            li:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            /* Grid de 2 colunas */
+            .grid-2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 6px !important;
+            }
+
+            /* Roles e experiência */
+            .role {
+                margin-bottom: 6px !important;
+                padding: 0 !important;
+            }
+
+            .role strong {
+                display: block;
+                color: var(--ink) !important;
+                font-weight: 700;
+                font-size: 0.92em !important;
+                margin-bottom: 2px !important;
+                line-height: 1.1;
+            }
+
+            .role span {
+                color: var(--soft) !important;
+                font-size: 0.85em !important;
+                display: block;
+                margin-bottom: 3px !important;
+                line-height: 1.2;
+            }
+
+            .role ul {
+                margin: 2px 0 0 !important;
+                padding-left: 14px !important;
+                font-size: 0.88em !important;
+            }
+
+            .role li {
+                margin-bottom: 1px !important;
+            }
+
+            /* Prevenir quebras desnecessárias */
+            h1, h2, .role strong {
+                page-break-after: avoid;
+            }
+
+            @page :first {
+                margin: 0.3cm !important;
+            }
+
+            @page :last {
+                margin: 0.3cm !important;
             }
         }
     </style>

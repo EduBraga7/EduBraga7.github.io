@@ -115,9 +115,11 @@ body {
     box-shadow: var(--shadow);
     padding: 1.5rem;
     animation: riseIn 0.55s ease both;
+    line-height: 0;
 }
 
 .hero-photo {
+    display: block;
     width: 140px;
     height: 140px;
     border-radius: 18px;
@@ -126,6 +128,8 @@ body {
     box-shadow: 0 10px 20px rgba(11, 59, 102, 0.2);
     align-self: center;
     justify-self: center;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-content {
@@ -134,6 +138,7 @@ body {
     justify-content: center;
     align-self: center;
     gap: 0.55rem;
+    line-height: 1.5;
 }
 
 .eyebrow {
