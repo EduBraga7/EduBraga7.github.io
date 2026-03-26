@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Braga - Resume (EN)</title>
+    <style>
+        :root {
+            --ink: #12263a;
+            --soft: #3f5e78;
+            --line: #d8e4ef;
+            --accent: #0b3b66;
+            --bg: #f6f9fc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.45;
+            padding: 24px;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: 0 10px 24px rgba(18, 38, 58, 0.08);
+            overflow: hidden;
+        }
+
+        .top {
+            background: linear-gradient(135deg, #0b3b66, #115a96);
+            color: #fff;
+            padding: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            margin: 6px 0 0;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .contacts {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+            font-size: 0.95rem;
+        }
+
+        .contacts a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 22px;
+            display: grid;
+            gap: 16px;
+        }
+
+        section {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 14px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0 0 8px;
+            color: var(--soft);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--soft);
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .role {
+            margin-bottom: 10px;
+        }
+
+        .role strong {
+            display: block;
+            color: var(--ink);
+        }
+
+        .role span {
+            color: var(--soft);
+            font-size: 0.92rem;
+        }
+
+        @media (max-width: 760px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .resume {
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="resume">
+        <header class="top">
+            <h1>Eduardo Braga do Prado</h1>
+            <p class="subtitle">Finance and Technology Internship Candidate</p>
+            <div class="contacts">
+                <span>Caraguatatuba - SP, Brazil</span>
+                <a href="mailto:braga.eduardo.prado@gmail.com">braga.eduardo.prado@gmail.com</a>
+                <a href="tel:+5512982324784">+55 12 98232-4784</a>
+                <a href="https://www.linkedin.com/in/ebragaprado" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/EduBraga7" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <section>
+                <h2>Professional Goal</h2>
+                <p>Internship opportunity in finance or technology, applying Excel, data analysis and Python to support investment analysis, process organization and operational control.</p>
+            </section>
+
+            <div class="grid-2">
+                <section>
+                    <h2>Education</h2>
+                    <p><strong>Systems Analysis and Development (ADS)</strong></p>
+                    <p>Centro Universitario Modulo</p>
+                    <p>Currently enrolled - 2nd semester</p>
+                    <p>Expected graduation: 2027</p>
+                </section>
+
+                <section>
+                    <h2>Certifications and Languages</h2>
+                    <ul>
+                        <li>CPA (ANBIMA) - In preparation</li>
+                        <li>English - Advanced reading and writing</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Advanced Excel (Pivot Tables, VLOOKUP, XLOOKUP)</li>
+                    <li>Supabase</li>
+                    <li>Git / GitHub</li>
+                    <li>Data Analysis</li>
+                    <li>Process Organization</li>
+                    <li>Brazilian Sign Language - Basic</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <div class="role">
+                    <strong>Ticker Tracker</strong>
+                    <span>Asset tracking focused on querying, organization and visualization of financial data.</span>
+                </div>
+                <div class="role">
+                    <strong>Moto Tracker</strong>
+                    <span>Fuel and vehicle maintenance tracker with spending history for personal planning.</span>
+                </div>
+                <div class="role">
+                    <strong>Movies and Series Diary</strong>
+                    <span>Project to register and organize watched content with focus on usability.</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Professional Experience</h2>
+                <div class="role">
+                    <strong>SOU Caragua - Sancetur</strong>
+                    <span>Traffic Assistant | Jun 2024 - Present</span>
+                    <ul>
+                        <li>Monitoring punctuality and regularity indicators.</li>
+                        <li>Fast communication with teams to resolve operational issues.</li>
+                        <li>Support in flow control and process organization.</li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <strong>Expresso Fenix Viacao</strong>
+                    <span>Traffic Assistant | Dec 2022 - Jun 2024</span>
+                    <ul>
+                        <li>Fleet dispatch and logistics support.</li>
+                        <li>Route and schedule monitoring.</li>
+                        <li>Identification and correction of process issues.</li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <strong>Praiamar Transportes</strong>
+                    <span>Operations Monitor / Administrative Apprentice | Nov 2019 - Nov 2021</span>
+                    <ul>
+                        <li>Administrative and treasury routine support.</li>
+                        <li>Operational systems monitoring.</li>
+                        <li>Support for internal processes and customer service.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </article>
+</body>
+</html>

@@ -1,32 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Cartão de visitas digital de Eduardo Braga, estudante de Análise e Desenvolvimento de Sistemas e entusiasta de tecnologia.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Braga - Cartão de Visitas</title>
+    <meta name="description" content="Portfólio de Eduardo Braga: tecnologia, dados e mercado financeiro.">
+    <meta name="theme-color" content="#0b3b66">
+    <meta property="og:title" content="Eduardo Braga | Portfólio">
+    <meta property="og:description" content="Estudante de ADS focado em Python, análise de dados e mercado de capitais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="foto-perfil.jpg">
+    <title>Eduardo Braga | Portfólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW0nE6Rqr8e0SZ8CsVYfTyhY6HkQYhAaD9KQ8R+7N1xwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
 </head>
+<body id="top">
+    <header class="topbar">
+        <a class="brand" href="#top" aria-label="Ir para o topo">
+            <span class="brand-first">Eduardo</span>
+            <span class="brand-last">Braga</span>
+        </a>
+        <a class="lang-switch" href="en.html" lang="en">EN</a>
+    </header>
 
-<body>
-    <main class="container">
-        <h1>Eduardo Braga do Prado</h1>
-        <img src="foto-perfil.jpg" alt="Foto de perfil de Eduardo Braga" class="foto-perfil">
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        <p>Entusiasta de Python e Tecnologia</p>
+    <section class="hero" aria-labelledby="nome">
+        <img src="foto-perfil.jpg" alt="Foto de perfil de Eduardo Braga" class="hero-photo" loading="lazy">
+        <div class="hero-content">
+            <p class="eyebrow">Disponível para oportunidades nas áreas financeira e tecnológica</p>
+            <h1 id="nome">Tecnologia e análise de dados para decisões financeiras mais estratégicas</h1>
+            <p>Profissional com mais de 5 anos em operações e rotinas administrativas, cursando ADS (2º semestre, conclusão prevista para 2027), com foco em Python, SQL e Excel avançado para transformar dados em decisões de negócio.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="curriculo-eduardo-braga-pt.html" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                    Abrir currículo em português
+                </a>
+                <a class="btn ghost" href="curriculo-eduardo-braga.pdf" download>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    Baixar currículo em PDF
+                </a>
+                <a class="btn ghost" href="mailto:braga.eduardo.prado@gmail.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    Falar comigo
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <h2>Minhas Redes</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ebragaprado" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </li>
-            <li><a href="https://github.com/EduBraga7" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-github"></i> GitHub</a></li>
-        </ul>
+    <main class="layout">
+        <section class="panel" aria-labelledby="objetivo-title">
+            <h2 id="objetivo-title">Objetivo profissional</h2>
+            <p>Busco estágio na área financeira ou de análise de dados, unindo experiência operacional e base técnica para apoiar análises, eficiência e tomada de decisão orientada por dados.</p>
+            <p><strong>Certificação:</strong> CPA (ANBIMA) em preparação.</p>
+        </section>
+
+        <section class="panel" aria-labelledby="skills-title">
+            <h2 id="skills-title">Competências</h2>
+            <ul class="chips">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Excel Avançado</li>
+                <li>Supabase</li>
+                <li>Git e GitHub</li>
+                <li>Análise de Dados</li>
+                <li>Organização de Processos</li>
+                <li>Inglês avançado (leitura e escrita)</li>
+                <li>Libras (Básico)</li>
+            </ul>
+        </section>
+
+        <section class="panel wide" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projetos</h2>
+            <div class="project-grid">
+                <article class="project">
+                    <h3>Ticker Tracker</h3>
+                    <p>Centraliza e organiza dados de ativos para facilitar consultas e análise de carteira em um único fluxo. Apoia decisões com base em indicadores e histórico. Tecnologias: Python e SQL.</p>
+                    <a href="https://github.com/EduBraga7/Ticker-Tracker" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>Moto Tracker</h3>
+                    <p>Transforma registros de combustível e manutenção em visão clara de custos e tendências de gasto. Fortalece decisões de economia com dados históricos organizados. Tecnologias: Python e SQL.</p>
+                    <a href="https://github.com/EduBraga7/Moto_Tracker" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>Diário de Filmes e Séries</h3>
+                    <p>Organiza grande volume de registros e preferências, melhorando busca, classificação e acompanhamento. Demonstra capacidade de estruturar dados e gerar insights. Tecnologias: Python e SQL.</p>
+                    <a href="https://github.com/EduBraga7/diario-filmes-series" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel wide" aria-labelledby="impact-title">
+            <h2 id="impact-title">Resultados e impacto</h2>
+            <div class="impact-grid">
+                <article class="impact-card">
+                    <strong>+5 anos</strong>
+                    <span>de atuação em operações e rotinas administrativas com disciplina de execução</span>
+                </article>
+                <article class="impact-card">
+                    <strong>3 empresas</strong>
+                    <span>com experiência em controle operacional, melhoria de processos e foco em resultados</span>
+                </article>
+                <article class="impact-card">
+                    <strong>3 projetos</strong>
+                    <span>autorais conectando tecnologia, dados e organização para apoiar decisões</span>
+                </article>
+                <article class="impact-card">
+                    <strong>CPA em preparo</strong>
+                    <span>com foco contínuo em mercado financeiro, análise e visão de investimento</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="experience-title">
+            <h2 id="experience-title">Experiência</h2>
+            <ul class="timeline">
+                <li><strong>SOU Caraguá - Sancetur</strong><span>Auxiliar de Tráfego | 2024 - atual</span></li>
+                <li><strong>Expresso Fênix Viação</strong><span>Auxiliar de Tráfego | 2022 - 2024</span></li>
+                <li><strong>Praiamar Transportes</strong><span>Monitor de Operações | 2019 - 2021</span></li>
+            </ul>
+        </section>
+
+        <section class="panel" aria-labelledby="contato-title">
+            <h2 id="contato-title">Contato e redes</h2>
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Caraguatatuba - SP</li>
+                <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+5512982324784">(12) 98232-4784</a></li>
+                <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:braga.eduardo.prado@gmail.com">braga.eduardo.prado@gmail.com</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ebragaprado" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a href="https://github.com/EduBraga7" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a class="whatsapp" href="https://wa.me/5512982324784?text=Ol%C3%A1%2C%20Eduardo!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20com%20voc%C3%AA." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+            </div>
+        </section>
     </main>
-</body>
-<script src="https://kit.fontawesome.com/4f21915c22.js" crossorigin="anonymous"></script>
 
+    <a class="back-to-top" href="#top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</body>
 </html>
