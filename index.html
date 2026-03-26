@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+        <!-- Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV8RSCNHV4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XV8RSCNHV4');
+        </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Eduardo Braga: tecnologia, dados e mercado financeiro.">
@@ -9,7 +20,12 @@
     <meta property="og:description" content="Estudante de ADS focado em Python, análise de dados e mercado de capitais.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="foto-perfil.jpg">
-    <title>Eduardo Braga | Portfólio</title>
+    <title>Eduardo Braga | Tech, Finanças & Dados</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,28 +39,42 @@
             <span class="brand-first">Eduardo</span>
             <span class="brand-last">Braga</span>
         </a>
-        <a class="lang-switch" href="en.html" lang="en">EN</a>
+        <a class="lang-switch" href="en.html" lang="en" aria-label="Mudar idioma para inglês">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2.25c-5.39 0-9.75 4.36-9.75 9.75s4.36 9.75 9.75 9.75 9.75-4.36 9.75-9.75-4.36-9.75-9.75-9.75zm7.5 9h-3.03a15.53 15.53 0 0 0-1.3-5.1 7.55 7.55 0 0 1 4.33 5.1zm-7.5-6.66c.76 0 2.14 1.72 2.8 5.16H9.2c.66-3.44 2.04-5.16 2.8-5.16zM6.83 6.15a15.53 15.53 0 0 0-1.3 5.1H2.5a7.55 7.55 0 0 1 4.33-5.1zM2.5 12.75h3.03a15.53 15.53 0 0 0 1.3 5.1 7.55 7.55 0 0 1-4.33-5.1zM12 19.41c-.76 0-2.14-1.72-2.8-5.16h5.6c-.66 3.44-2.04 5.16-2.8 5.16zm3.16-6.66H8.84a14.09 14.09 0 0 1 0-1.5h6.32a14.09 14.09 0 0 1 0 1.5zm.01 5.1a15.53 15.53 0 0 0 1.3-5.1h3.03a7.55 7.55 0 0 1-4.33 5.1z" />
+            </svg>
+            <span>EN</span>
+        </a>
     </header>
 
     <section class="hero" aria-labelledby="nome">
         <img src="foto-perfil.jpg" alt="Foto de perfil de Eduardo Braga" class="hero-photo" loading="lazy">
         <div class="hero-content">
-            <p class="eyebrow">Disponível para oportunidades nas áreas financeira e tecnológica</p>
             <h1 id="nome">Tecnologia e análise de dados para decisões financeiras mais estratégicas</h1>
+            <p class="eyebrow">Disponível para oportunidades nas áreas financeira e tecnológica</p>
             <p>Profissional com mais de 5 anos em operações e rotinas administrativas, cursando ADS (2º semestre, conclusão prevista para 2027), com foco em Python, SQL e Excel avançado para transformar dados em decisões de negócio.</p>
             <div class="hero-actions">
-                <a class="btn primary" href="curriculo-eduardo-braga-pt.html" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
-                    Abrir currículo em português
-                </a>
-                <a class="btn ghost" href="curriculo-eduardo-braga.pdf" download>
+                <a class="btn primary" href="curriculo-eduardo-braga.pdf" download>
                     <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
                     Baixar currículo em PDF
                 </a>
-                <a class="btn ghost" href="mailto:braga.eduardo.prado@gmail.com">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    Falar comigo
-                </a>
+                <div class="hero-socials" aria-label="Contatos rápidos">
+                    <a class="hero-icon-btn" href="https://www.linkedin.com/in/ebragaprado" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M6.94 8.5V19H3.44V8.5h3.5zm.25-3.24c0 1-.75 1.76-2 1.76h-.02c-1.2 0-1.96-.77-1.96-1.76 0-1 .78-1.76 2-1.76s1.96.76 1.98 1.76zM20.5 12.98V19H17v-5.61c0-1.41-.5-2.37-1.77-2.37-.96 0-1.53.64-1.78 1.26-.09.22-.11.53-.11.84V19h-3.5s.05-9.69 0-10.5h3.5V10c.46-.72 1.28-1.74 3.12-1.74 2.28 0 4.04 1.49 4.04 4.72z" />
+                        </svg>
+                    </a>
+                    <a class="hero-icon-btn" href="https://github.com/EduBraga7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.01c-3.2.69-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.72-1.53-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.18-3.07-.12-.3-.51-1.5.11-3.13 0 0 .96-.31 3.15 1.17A10.9 10.9 0 0 1 12 6.26c.98 0 1.97.13 2.9.38 2.19-1.48 3.14-1.17 3.14-1.17.63 1.63.24 2.83.12 3.13.74.8 1.18 1.82 1.18 3.07 0 4.4-2.68 5.36-5.24 5.65.41.35.78 1.04.78 2.1v3.11c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+                        </svg>
+                    </a>
+                    <a class="hero-icon-btn" href="https://wa.me/5512982324784?text=Ol%C3%A1%2C%20Eduardo!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20com%20voc%C3%AA." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.57 0 .29 5.27.29 11.76c0 2.08.54 4.12 1.56 5.92L0 24l6.5-1.8a11.73 11.73 0 0 0 5.56 1.42h.01c6.49 0 11.77-5.28 11.77-11.77 0-3.15-1.23-6.1-3.32-8.37zM12.07 21.6h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.86 1.07 1.03-3.76-.24-.39a9.77 9.77 0 0 1-1.5-5.18c0-5.41 4.4-9.81 9.82-9.81 2.63 0 5.1 1.03 6.96 2.89a9.8 9.8 0 0 1 2.86 6.92c0 5.42-4.4 9.82-9.81 9.82zm5.38-7.35c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.95 1.17c-.17.2-.35.22-.64.07-.3-.15-1.24-.46-2.36-1.47-.87-.77-1.46-1.72-1.64-2.02-.17-.3-.02-.45.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.09 3.2 5.06 4.48.7.3 1.25.48 1.67.61.7.22 1.34.19 1.84.11.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.08-.13-.27-.2-.57-.35z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -62,9 +92,9 @@
                 <li>Python</li>
                 <li>SQL</li>
                 <li>Excel Avançado</li>
+                <li>Análise de Dados</li>
                 <li>Supabase</li>
                 <li>Git e GitHub</li>
-                <li>Análise de Dados</li>
                 <li>Organização de Processos</li>
                 <li>Inglês avançado (leitura e escrita)</li>
                 <li>Libras (Básico)</li>
@@ -76,17 +106,29 @@
             <div class="project-grid">
                 <article class="project">
                     <h3>Ticker Tracker</h3>
-                    <p>Centraliza e organiza dados de ativos para facilitar consultas e análise de carteira em um único fluxo. Apoia decisões com base em indicadores e histórico. Tecnologias: Python e SQL.</p>
+                    <p>Centraliza e organiza dados de ativos para facilitar consultas e análise de carteira em um único fluxo. Apoia decisões com base em indicadores e histórico.</p>
+                    <ul class="tech-tag-mini" aria-label="Tecnologias utilizadas no projeto Ticker Tracker">
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
                     <a href="https://github.com/EduBraga7/Ticker-Tracker" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
                 </article>
                 <article class="project">
                     <h3>Moto Tracker</h3>
-                    <p>Transforma registros de combustível e manutenção em visão clara de custos e tendências de gasto. Fortalece decisões de economia com dados históricos organizados. Tecnologias: Python e SQL.</p>
+                    <p>Transforma registros de combustível e manutenção em visão clara de custos e tendências de gasto. Fortalece decisões de economia com dados históricos organizados.</p>
+                    <ul class="tech-tag-mini" aria-label="Tecnologias utilizadas no projeto Moto Tracker">
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
                     <a href="https://github.com/EduBraga7/Moto_Tracker" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
                 </article>
                 <article class="project">
                     <h3>Diário de Filmes e Séries</h3>
-                    <p>Organiza grande volume de registros e preferências, melhorando busca, classificação e acompanhamento. Demonstra capacidade de estruturar dados e gerar insights. Tecnologias: Python e SQL.</p>
+                    <p>Organiza grande volume de registros e preferências, melhorando busca, classificação e acompanhamento. Demonstra capacidade de estruturar dados e gerar insights.</p>
+                    <ul class="tech-tag-mini" aria-label="Tecnologias utilizadas no projeto Diário de Filmes e Séries">
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
                     <a href="https://github.com/EduBraga7/diario-filmes-series" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub</a>
                 </article>
             </div>
@@ -107,9 +149,9 @@
                     <strong>3 projetos</strong>
                     <span>autorais conectando tecnologia, dados e organização para apoiar decisões</span>
                 </article>
-                <article class="impact-card">
-                    <strong>CPA em preparo</strong>
-                    <span>com foco contínuo em mercado financeiro, análise e visão de investimento</span>
+                <article class="impact-card highlight-card">
+                    <strong>CPA-20 (ANBIMA)</strong>
+                    <span><strong>Exame agendado para 17/04/2026.</strong> Foco em análise de investimentos e mercado de capitais.</span>
                 </article>
             </div>
         </section>
@@ -137,6 +179,10 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer" aria-label="Aviso de privacidade">
+        <p class="privacy-note">Este site utiliza Google Analytics para análise de tráfego e melhoria da experiência de usuário conforme a LGPD.</p>
+    </footer>
 
     <a class="back-to-top" href="#top" aria-label="Voltar ao topo">
         <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
