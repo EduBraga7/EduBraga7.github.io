@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EB favicon">
-  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b3b66"/>
-  <path d="M18 16h22v6H25v6h12v6H25v8h15v6H18V16z" fill="#ffffff"/>
-  <path d="M44 16h-9v6h9a3.5 3.5 0 0 1 0 7h-9v6h9a3.5 3.5 0 0 1 0 7h-9v6h9c5.52 0 10-4.48 10-10a9.8 9.8 0 0 0-3.02-7A9.8 9.8 0 0 0 54 26c0-5.52-4.48-10-10-10z" fill="#ffffff"/>
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="10" fill="#0d3b66"/>
+  
+  <path d="M8 20l6-6 4 4 6-6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="24" cy="12" r="2.5" fill="white"/>
 </svg>
