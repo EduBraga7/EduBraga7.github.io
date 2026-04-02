@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="B favicon">
+  <rect width="64" height="64" rx="12" fill="#0b0b0b"/>
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#00ff2b" stroke-opacity="0.45"/>
+  <text
+    x="50%"
+    y="55%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace"
+    font-size="44"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#00ff2b"
+  >B</text>
+</svg>
